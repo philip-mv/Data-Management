@@ -1,0 +1,34 @@
+import math
+
+def find_rightmost_set_bit_position(n):
+    
+    if n == 0:
+        return 0  
+
+   
+    rightmost_bit = n & (-n)
+
+  
+    position = int(math.log2(rightmost_bit)) + 1
+    return position
+
+
+number1 = 8 
+position1 = find_rightmost_set_bit_position(number1)
+print(f"Enter number: {number1} ({bin(number1)[2:]})")
+print(f"Position of the first set bit: {position1}")
+
+number2 = 7  
+position2 = find_rightmost_set_bit_position(number2)
+print(f"\nEnter number: {number2} ({bin(number2)[2:]})")
+print(f"Position of the first set bit: {position2}")
+
+number3 = 0  
+position3 = find_rightmost_set_bit_position(number3)
+print(f"\nEnter number: {number3} ({bin(number3)[2:]})")
+print(f"Position of the first set bit: {position3}")
+
+number4 = 32  
+position4 = find_rightmost_set_bit_position(number4)
+print(f"\nEnter number: {number4} ({bin(number4)[2:]})")
+print(f"Position of the first set bit: {position4}")
