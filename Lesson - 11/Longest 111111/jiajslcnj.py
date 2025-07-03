@@ -15,15 +15,19 @@ def longest_consecutive_ones(number):
         
             current_length = 0
 
+
+
     
         max_length = max(max_length, current_length)
 
     
+
         number >>= 1
 
     return max_length
 
 try:
+
     user_number = int(input("Enter your number: "))
 
 
@@ -35,3 +39,5 @@ try:
 except ValueError:
 
     print("Invalid input. Please enter a valid integer.")
+
+
