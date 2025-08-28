@@ -21,5 +21,5 @@ def maxCircularSum(a):
         return max_wrap
     else:
         return max_kadane
-a = [11,10,-20,5,-3,-5,8,-13,10]
+a = [11,110,-200,5,-3,-5,88,-13,110]
 print("Maximum circular sum is",maxCircularSum(a))
