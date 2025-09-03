@@ -11,6 +11,6 @@ def equilibriumPoint(arr):
             rightSideSum += arr[j]
         if leftSideSum == rightSideSum:
             return i
-    return - 1
-arr = [-4,6,2,0,0,1,1]
+    return -1
+arr = [-7,1,5,2,-4,3,0]
 print("Element :",arr[equilibriumPoint(arr)])
